@@ -1,0 +1,23 @@
+{
+  "name": "nepttune/googleApi",
+  "description": "Small classes for communication with Google API",
+  "homepage": "https://www.peldax.com",
+  "type": "library",
+  "license": ["MIT"],
+  "authors": [
+    {
+      "name": "Václav Pelíšek",
+      "homepage": "https://www.peldax.com"
+    }
+  ],
+  "require": {
+    "nepttune/base-requirements" : "^4.0",
+    
+    "ext-json": ">=1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nepttune\\Model\\": "src/"
+    }
+  }
+}
