@@ -1,5 +1,5 @@
 {
-  "name": "nepttune/googleApi",
+  "name": "nepttune/google-api",
   "description": "Small classes for communication with Google API",
   "homepage": "https://www.peldax.com",
   "type": "library",
