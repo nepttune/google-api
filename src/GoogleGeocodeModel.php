@@ -35,7 +35,7 @@ class GoogleGeocodeModel
 
     public function geocodeLatLng(array $latLng) : array
     {
-        return $this->request(['location' => \implode(',', $latLng)]);
+        return $this->request(['latlng' => \implode(',', $latLng)]);
     }
 
     public function geocodeGoogle(string $googleId) : array
