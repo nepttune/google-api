@@ -28,22 +28,22 @@ class GoogleGeocodeModel
         $this->config = $config;
     }
 
-    public function geocodeAddress(string $address) : array
+    public function geocodeAddress(string $address) : ?array
     {
         return $this->request(['address' => $address]);
     }
 
-    public function geocodeLatLng(array $latLng) : array
+    public function geocodeLatLng(array $latLng) : ?array
     {
         return $this->request(['latlng' => \implode(',', $latLng)]);
     }
 
-    public function geocodeGoogle(string $googleId) : array
+    public function geocodeGoogle(string $googleId) : ?array
     {
         return $this->request(['place_id' => $googleId]);
     }
 
-    protected function request(array $params) : array
+    protected function request(array $params) : ?array
     {
         $params['key'] = $this->config['key'];
         $response = \file_get_contents(static::API_URL . \http_build_query($params));
